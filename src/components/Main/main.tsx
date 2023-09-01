@@ -1,4 +1,4 @@
-import Particles from "react-tsparticles"
+import TSParticles from "react-tsparticles"
 import {Container} from "./styles"
 // import {Hero} from "../Hero/Hero"
 // import { About } from "../About/About";
@@ -22,9 +22,9 @@ export function Main(){
   return(
 
     <Container>
-      <Particles
-      id="tsparticles"
-      options={{
+      <TSParticles
+        id="tsparticles"
+        options={{
         "fullScreen": {
           "enable": true,
           "zIndex": 1
@@ -246,8 +246,8 @@ export function Main(){
           "repeat": "no-repeat",
           "size": "cover"
         }
-      }}
-    />
+        }}
+      />
       {/* <Hero></Hero>
       <About></About> */}
       {/* <Portfolio></Portfolio> */}
