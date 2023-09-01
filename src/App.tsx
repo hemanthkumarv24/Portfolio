@@ -1,23 +1,19 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import Button from './components/Practice';
+// import Navbar from './components/Navbar';
+import { GlobalStyle } from './styles/global'
+import { Main } from './components/Main/main';
+import { Header } from './components/Header/Header'
 
-function MyButton(){
-  return(
-    <div>
-    <button>CLICK ME</button>
-    console.log("Button Function loaded")
-    </div>
-  )
-}
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <MyButton/>
-      <Button/>
+      <GlobalStyle></GlobalStyle>
+      {/* <Navbar/> */}
+      <Header></Header>
+      <Main></Main>
+      
     </div>
   );
 }

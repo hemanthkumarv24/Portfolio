@@ -10,7 +10,7 @@
   z-index: -1; /* This places it behind your content */
 }
 nav{
-  background-color: #282c34;
+  background-color: transparent;
   position: fixed;
   padding: 10px 0;
   display: flex;
@@ -34,14 +34,14 @@ nav li{
 
 }
 nav li:hover {
-  background-color: rgba(253, 253, 253, 0.1); /* Slight gray background on hover */
+  background-color: rgba(0, 0, 0, 0.1); /* Slight gray background on hover */
 }
 
 nav a {
   text-decoration: none;
   padding: 10px 35px;
 
-  color: white;
+  color: rgb(0, 0, 0);
   transition: color 0.3s;
   text-align: center; /* Center-align the text */
 }
@@ -50,6 +50,6 @@ nav a {
   font-weight: bold;
   font-style:initial;
   padding-left: 20px;
-  color: antiquewhite;
+  color: rgb(1, 1, 1);
   margin-right: auto;  /* Pushes the rest of the items to the right side of the flex container */
 }
