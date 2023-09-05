@@ -1,9 +1,9 @@
-import TSParticles from "react-tsparticles"
+import Particles from "react-tsparticles"
 import {Container} from "./styles"
-// import {Hero} from "../Hero/Hero"
-// import { About } from "../About/About";
-// import { Contact } from "../Contact/Contact";
-// import { Portfolio } from "../Portfolio/Portfolio";
+import {Hero} from "../Hero/Hero"
+import { About } from "../About/About";
+import { Contact } from "../Contact/Contact";
+import { Portfolio } from "../Portfolio/Portfolio";
 
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import cssIcon from "../../assets/css-icon.svg";
@@ -22,9 +22,9 @@ export function Main(){
   return(
 
     <Container>
-      <TSParticles
-        id="tsparticles"
-        options={{
+      <Particles
+      id="tsparticles"
+      options={{
         "fullScreen": {
           "enable": true,
           "zIndex": 1
@@ -246,12 +246,12 @@ export function Main(){
           "repeat": "no-repeat",
           "size": "cover"
         }
-        }}
-      />
-      {/* <Hero></Hero>
-      <About></About> */}
-      {/* <Portfolio></Portfolio> */}
-      {/* <Contact></Contact> */}
+      }}
+    />
+      <Hero></Hero>
+      <About></About>
+      <Portfolio></Portfolio>
+      <Contact></Contact>
     </Container>
   );
 }

@@ -1,21 +1,19 @@
-import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-// import { GlobalStyle } from './styles/global'
-import { Main } from './components/Main/main';
-// import { Header } from './components/Header/Header'
-
+import React from 'react'
+import { useEffect } from 'react'
+import { Footer } from './components/Footer/Footer'
+import { Header } from './components/Header/Header'
+import { Main } from './components/Main/Main'
+import { GlobalStyle } from './styles/global'
+import 'react-toastify/dist/ReactToastify.css'
 function App() {
   return (
-    <div className="App">
-      {/* <GlobalStyle></GlobalStyle> */}
-      <Navbar/>
-      {/* <Header></Header> */}
+    <>
+      <GlobalStyle></GlobalStyle>
+      <Header></Header>
       <Main></Main>
-      
-    </div>
-  );
+      <Footer></Footer>
+    </>
+  )
 }
 
-export default App;
+export default App
