@@ -40,7 +40,7 @@ export function Main(){
             "onDiv": {
               "elementId": "repulse-div",
               "enable": false,
-              "mode": "repulse"
+              "mode": "bubble"
             },
             "onHover": {
               "enable": true,
