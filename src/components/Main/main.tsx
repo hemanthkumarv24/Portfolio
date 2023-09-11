@@ -243,7 +243,7 @@ export function Main(){
         "background": {
           "image": "",
           "position": "50% 50%",
-          "repeat": "no-repeat",
+          // "repeat": "no-repeat",
           "size": "cover"
         }
       }}
