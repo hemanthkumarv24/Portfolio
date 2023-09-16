@@ -126,21 +126,21 @@ export function Portfolio(){
           <div className="project">
             <header>
             <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            {/* <div className="project-links">
-              <a href="https://github.com/joaotuliojt/dtmoney-trilha-reactjs" target="_blank" rel="noreferrer">
+            <div className="project-links">
+              <a href="https://github.com/hemanthkumarv24/Login-page" target="_blank" rel="noreferrer">
                 <img src={githubIcon} alt="Visitar site" />
               </a>
-            </div> */}
+            </div>
             </header>
             <div className="body">
-              <h3>Dtmoney</h3>
-              <p>A finance manager to analyze your earnings, expenses and have greater control of your finances.
+              <h3>Login || Signup page</h3>
+              <p>A Login or Signup page for any web application. Created this page for learning react.
               </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>VueJs</li>
-                <li>JavaScript</li>
+                <li>Css</li>
+                <li>React</li>
               </ul>
             </footer>
           </div>
