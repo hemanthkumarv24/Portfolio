@@ -1,5 +1,5 @@
 # Portfolio Hemanth Kumar 
-## Tecnologias Used:
+## Tecnologies Used:
 - React
 - Typescript
 - Styled Components
