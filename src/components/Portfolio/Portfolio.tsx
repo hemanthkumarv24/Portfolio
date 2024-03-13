@@ -125,21 +125,21 @@ export function Portfolio(){
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
-            <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Personal Expense Tracker</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            {/* <div className="project-links">
-              <a href="https://github.com/joaotuliojt/dtmoney-trilha-reactjs" target="_blank" rel="noreferrer"> 
+            <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            <div className="project-links">
+              <a href="https://github.com/hemanthkumarv24/PersonalExpenseTracker" target="_blank" rel="noreferrer">
                 <img src={githubIcon} alt="Visitar site" />
               </a>
-            </div> */}
+            </div>
             </header>
             <div className="body">
-              <h3>Dtmoney</h3>
+              <h3>Personal Expense Tracker</h3>
               <p>A finance manager to analyze your earnings, expenses and have greater control of your finances.
               </p>
             </div>
             <footer>
               <ul className="tech-list">
-                <li>VueJs</li>
+                <li>React</li>
                 <li>JavaScript</li>
               </ul>
             </footer>
@@ -173,6 +173,7 @@ export function Portfolio(){
             </footer>
           </div>
         </ScrollAnimation>
+       
 
 
 

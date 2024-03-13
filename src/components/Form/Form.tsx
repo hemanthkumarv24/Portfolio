@@ -1,15 +1,15 @@
 import { Container, ContainerSucces } from './styles'
 import { useForm, ValidationError } from '@formspree/react'
 import { toast, ToastContainer } from 'react-toastify'
-import ReCAPTCHA from 'react-google-recaptcha'
+// import ReCAPTCHA from 'react-google-recaptcha'
 import { useEffect, useState } from 'react'
 import validator from 'validator'
 
 export function Form() {
-  const [state, handleSubmit] = useForm('myyozglw')
+  const [state, handleSubmit] = useForm('succeeded')
 
   const [validEmail, setValidEmail] = useState(false)
-  const [isHuman, setIsHuman] = useState(false)
+  // const [isHuman, setIsHuman] = useState(false)
   const [message, setMessage] = useState('')
 
   function verifyEmail(email: string) {
@@ -22,7 +22,7 @@ export function Form() {
 
   useEffect(() => {
     if (state.succeeded) {
-      toast.success('Email enviado com sucesso!', {
+      toast.success('Email sent Succesfully', {
         position: toast.POSITION.BOTTOM_LEFT,
         pauseOnFocusLoss: false,
         closeOnClick: true,
@@ -34,13 +34,13 @@ export function Form() {
   if (state.succeeded) {
     return (
       <ContainerSucces>
-        <h3>Obrigado por entrar em contato!</h3>
+        <h3>Thank you for getting in touch!</h3>
         <button
           onClick={() => {
             window.scrollTo({ top: 0, behavior: 'smooth' })
           }}
         >
-          Voltar ao topo
+         Back to the top
         </button>
         <ToastContainer />
       </ContainerSucces>
@@ -76,15 +76,15 @@ export function Form() {
           field="message"
           errors={state.errors}
         />
-        <ReCAPTCHA
+        {/* <ReCAPTCHA
           sitekey="6LcAu-IdAAAAAJOTI5E_eRltZNQCvukIl2-f1glQ"
           onChange={(e) => {
             setIsHuman(true)
           }}
-        ></ReCAPTCHA>
+        ></ReCAPTCHA> */}
         <button
           type="submit"
-          disabled={state.submitting || !validEmail || !message || !isHuman}
+          disabled={state.submitting || !validEmail || !message }
         >
           To Send
         </button>

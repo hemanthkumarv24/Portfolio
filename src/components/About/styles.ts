@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container1 = styled.section`
   margin-top: 12rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -46,8 +46,9 @@ export const Container = styled.section`
     text-align: center;
    img{
      margin-top: 2rem;
-     width: 100%;
+     width: 80%;
      filter: grayscale(1);
+     border-radius:20;
      transition: filter 0.5s;
      &:hover{
        filter: grayscale(0);

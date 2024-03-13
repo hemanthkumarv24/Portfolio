@@ -1,19 +1,19 @@
-import { Container } from "./styles";
+import { Container1 } from "./styles";
 
-import profileImage from "../../assets/profile-image.jpg"
+// import profileImage from "../../assets/profile-image.jpg"
 import cssIcon from "../../assets/css-icon.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
-import vueIcon from "../../assets/vue-icon.svg";
+// import vueIcon from "../../assets/vue-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import hkImage from '../../assets/HK.jpg'
 
 export function About(){
   return(
-    <Container id="sobre">
+    <Container1 id="sobre">
       <div className="about-text">
         <ScrollAnimation animateIn="fadeInLeft">
           <h2>About me</h2>
@@ -41,11 +41,11 @@ export function About(){
             </ScrollAnimation>
           </div>
 
-          <div className="hability">
+          {/* <div className="hability">
           <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
             <img src={vueIcon} alt="Vue" />
           </ScrollAnimation>
-          </div>
+          </div> */}
 
           <div className="hability">
           <ScrollAnimation animateIn="fadeInUp" delay={0.3 * 1000}> 
@@ -81,9 +81,9 @@ export function About(){
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
-          <img src={hkImage}/>
+          <img src={hkImage} alt="Hemanth kumar V" width={300} style={{borderRadius:'20px'}} height={500}/>
         </ScrollAnimation>
       </div>
-    </Container>
+    </Container1>
   )
 }

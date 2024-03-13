@@ -24,6 +24,10 @@ export const Container = styled.section`
     
     p.small-resume {
       margin-bottom: 5rem;
+      margin-top: 1rem;
+
+      font-size:17px;
+      font-weight:700;
     }
   }
 

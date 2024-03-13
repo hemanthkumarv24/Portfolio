@@ -13,12 +13,12 @@ export function Footer() {
         <span>H</span>
         <span>K</span>
       </a>
-      <div>
+      {/* <div>
         <p>
         This site was made with <img src={reactIcon} alt="React" /> a lot of
           <span>❤️</span>
         </p>
-      </div>
+      </div> */}
 
       <div className="social-media">
         <a
@@ -45,13 +45,13 @@ export function Footer() {
           <img src={instagramIcon} alt="Instagram" />
         </a>
 
-        <a
+        {/* <a
           href="https://discord.com/users/426120432991862784"
           target="_blank"
           rel="noreferrer"
         >
           <img src={discordIcon} alt="Discord" />
-        </a>
+        </a> */}
       </div>
     </Container>
   )
